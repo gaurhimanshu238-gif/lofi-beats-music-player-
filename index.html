@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoFi Beats - Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="player">
+
+    <header>
+        <div class="logo">♫ LoFi Beats</div>
+        <span class="live">● ONLINE PLAYER</span>
+    </header>
+
+    <p class="welcome">Your personal music space.</p>
+
+    <div class="album">
+        <img id="cover"
+        src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=600"
+        alt="Album Cover">
+    </div>
+
+    <h2 id="title">Midnight Dreams</h2>
+    <p id="artist">LoFi Beats</p>
+
+    <audio id="audio"></audio>
+
+    <div class="progress-container">
+        <span id="current-time">0:00</span>
+        <input type="range" id="progress"
+        min="0" max="100" value="0">
+        <span id="duration">0:00</span>
+    </div>
+
+    <div class="controls">
+        <button id="prev" title="Previous">⏮</button>
+        <button id="play" class="play-btn" title="Play">▶</button>
+        <button id="next" title="Next">⏭</button>
+    </div>
+
+    <div class="volume">
+        <span>🔊</span>
+        <input type="range" id="volume"
+        min="0" max="1" step="0.01" value="0.7">
+        <span id="volume-value">70%</span>
+    </div>
+
+    <div class="playlist-section">
+
+        <div class="playlist-heading">
+            <h3>My Playlist</h3>
+            <span id="song-count">10 Songs</span>
+        </div>
+
+        <input type="text" id="search"
+        placeholder="🔍 Search your favourite song...">
+
+        <div id="playlist"></div>
+
+    </div>
+
+    <footer>
+        Made with ♡ by a Music Lover
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
